@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria Exemplo</title>
+    <title>Cafeteria</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linkando meu arquivo .html ao meu arquivo .css-->
 </head>
+
 <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <figure>
-            <img src="https://thumbs.dreamstime.com/b/cup-coffee-beans-doodle-sketch-style-vector-cup-coffee-beans-doodle-sketch-style-vector-illustration-175580091.jpg" alt="Logotipo da Cafeteria" width="200" height="100">
-            <figcaption>Cafeteria Exemplo</figcaption>
+    <header id="inicio">
+        <figure class="image-container">
+            <img src="../html5+css/coffee1.png" alt="Logotipo da Cafeteria" width="200" height="100">
+            <figcaption>Grãos & Sabores</figcaption>
         </figure>
-        <h1>Bem-vindo à Cafeteria Exemplo</h1>
+        <h1>O sabor que transforma seu dia.</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Nós</a></li>
@@ -24,97 +27,144 @@
         </nav>
     </header>
 
+    <!-- Barra de Pesquisa -->
+    <form role="search" class="search-bar">
+        <button type="submit" class="search-icon">
+            <img src="../imgs/coffee-filled.svg" alt="Search">
+        </button>
+        <input type="search" id="search-bar" name="q" placeholder="Encontre o gostinho para você..." />
+    </form>
+
     <!-- Conteúdo principal -->
     <main>
 
-        <section id="sobre">
-            <header>
-                <h2>Sobre Nós</h2>
-            </header>
-            <p>A Cafeteria Exemplo é o lugar perfeito para desfrutar de um café delicioso e de alta qualidade, acompanhado de nossos doces e salgados exclusivos. Com um ambiente aconchegante e um serviço acolhedor, estamos prontos para recebê-lo a qualquer hora do dia.</p>
-        </section>
-
         <section id="menu">
             <header>
-                <h2>Nosso Menu</h2>
+                <h2>Menu</h2>
             </header>
-            <article>
+            </sections>
+            <section id="menu-item">
+                <article class="menu-item">
+                    <header>
+                        <h3>Espresso</h3>
+                        <p>R$ 5,00</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
+                </article>
+                <article class="menu-item">
+                    <header>
+                        <h3>Cappuccino</h3>
+                        <p>R$ 8,00</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
+                </article>
+                <article class="menu-item">
+                    <header>
+                        <h3>Bolo de Cenoura</h3>
+                        <p>R$ 6,00</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
+                </article>
+                <article class="menu-item">
+                    <header>
+                        <h3>Espresso</h3>
+                        <p>R$ 5,00</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
+                </article>
+                <article class="menu-item">
+                    <header>
+                        <h3>Cappuccino</h3>
+                        <p>R$ 8,00</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
+                </article>
+                <article class="menu-item">
+                    <header>
+                        <h3>Bolo de Cenoura</h3>
+                        <p>R$ 6,00</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
+                </article>
+            </section>
+            <section id="nosso-lugar">
                 <header>
-                    <h3>Espresso</h3>
-                    <p>Preço: R$ 5,00</p>
+                    <h2>Nosso Lugar</h2>
                 </header>
-                <p>Descrição: Um café espresso puro, feito com grãos selecionados e moídos na hora, para oferecer um sabor intenso e encorpado.</p>
-            </article>
-            <article>
-                <header>
-                    <h3>Cappuccino</h3>
-                    <p>Preço: R$ 8,00</p>
-                </header>
-                <p>Descrição: Uma combinação perfeita de café espresso, leite vaporizado e espuma cremosa, finalizada com um toque de canela.</p>
-            </article>
-            <article>
-                <header>
-                    <h3>Bolo de Cenoura</h3>
-                    <p>Preço: R$ 6,00</p>
-                </header>
-                <p>Descrição: Nosso bolo de cenoura é feito com ingredientes frescos e coberto com uma deliciosa calda de chocolate caseira.</p>
-            </article>
-        </section>
+                </sections>
+            </section>
+            <section id="images">
+                <figure>
+                    <img src="/home/iza/Área de Trabalho/FrontCraft/html5+css/cft.jpg" alt="Descrição da Imagem 1">
+                </figure>
 
-        <section id="equipe">
-            <header>
-                <h2>Nossa Equipe</h2>
-            </header>
-            <article>
-                <header>
-                    <h3>João Silva</h3>
-                    <p>Barista Chefe</p>
-                </header>
-                <p>João é nosso barista chefe, especializado em preparar o melhor café da cidade. Com anos de experiência, ele é apaixonado por café e adora criar novas combinações de sabores.</p>
-            </article>
-            <article>
-                <header>
-                    <h3>Maria Oliveira</h3>
-                    <p>Confeiteira</p>
-                </header>
-                <p>Maria é a mente criativa por trás de nossos deliciosos bolos e doces. Sua paixão pela confeitaria se reflete em cada sobremesa que ela cria.</p>
-            </article>
-        </section>
+                <figure>
+                    <img src="/home/iza/Área de Trabalho/FrontCraft/html5+css/cftr.jpeg" alt="Descrição da Imagem 2">
+                </figure>
+            </section>
 
-        <section id="contato">
-            <header>
-                <h2>Contato</h2>
-            </header>
-            <address>
-                <p>Email: <a href="mailto:contato@cafeteriaexemplo.com">contato@cafeteriaexemplo.com</a></p>
-                <p>Telefone: (85) 1234-5678</p>
-                <p>Endereço: Rua Exemplo, 123, Cidade, Estado, Brasil</p>
-            </address>
-        </section>
+            <section id="sobre">
+                <header>
+                    <h2>Sobre Nós</h2>
+                </header>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe maiores eveniet ipsum, praesentium
+                    fuga minima odit quaerat quam quibusdam veniam dicta beatae facere nostrum possimus magnam commodi
+                    tenetur nobis consequuntur! Neque esse sunt ullam nulla, placeat quae est dolorem accusamus,
+                    voluptatum ex beatae consequuntur dignissimos corporis tempore? Sint, perspiciatis doloremque?</p>
+            </section>
+
+            <section id="equipe">
+                <header>
+                    <h2>Nossa Equipe</h2>
+                </header>
+                <article>
+                    <header>
+                        <h3>João Silva</h3>
+                        <p>Barista Chefe</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta vero ut laudantium ad quasi
+                        laborum ipsam esse aspernatur hic? Totam perferendis vitae modi repudiandae consequuntur
+                        consectetur cum, incidunt unde.</p>
+                </article>
+                <article>
+                    <header>
+                        <h3>Maria Oliveira</h3>
+                        <p>Confeiteira</p>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel quaerat culpa aliquam
+                        veritatis harum aliquid distinctio facere sunt praesentium nulla eligendi labore consequuntur,
+                        eius itaque pariatur dicta accusantium perferendis?</p>
+                </article>
 
     </main>
 
     <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Cafeteria Exemplo. Todos os direitos reservados.</p>
+    <footer id="contato">
+        <p>&copy; 2024 Cafeteria Grãos e Sabores. Todos os direitos reservados.</p>
 
         <!-- Formulário de Contato -->
-        <form action="#" method="post">
+        <form action="#" method="post"> <!-- agrupando visualmente os elementos-->
             <fieldset>
                 <legend>Fale Conosco</legend>
+
                 <label for="nome">Nome:</label>
+                <!-- o for precisa apontar para o id do input que ele representa para linkar a label ao seu input -->
                 <input type="text" id="nome" name="nome" required>
-                <br>
+                <br> <!-- quebra de linha -->
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <br>
+
                 <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
                 <br>
+
                 <button type="submit">Enviar</button>
             </fieldset>
         </form>
     </footer>
 
 </body>
+
 </html>

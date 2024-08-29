@@ -1,0 +1,278 @@
+/* Reset básico para remover margens e padding padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#search-bar::placeholder {
+    color: #c7baba;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: rgba(177, 114, 69, 0.5);
+    border-radius: 50px;
+    padding: 5px;
+    width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 3px auto;
+
+}
+
+.search-bar input[type="search"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    flex-grow: 1;
+    background: transparent;
+}
+
+.search-icon {
+    background-color: #964b00;
+    border: none;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon img {
+    width: 28px;
+    height: 28px;
+}
+
+body {
+    background-image: url('https://www.petz.com.br/blog/wp-content/uploads/2021/08/como-plantar-cafe2-1280x720.jpg');
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #964b00;
+    background-color: #f4f4f4;
+    background-size: 600px 400px;
+    padding: 20px;
+}
+
+body header figure {
+    margin-top: -40px;
+}
+
+body header h1 {
+    margin-top: 10px;
+}
+
+.image-container figcaption {
+    color: #fff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+#inicio {
+    background: rgba(177, 114, 69, 0.5);
+    text-align: center;
+    margin-bottom: 15px;
+    backdrop-filter: blur(0.8px);
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+header p {
+    padding-right: 25px;
+    font-size: 17px;
+    color: #5d3a1a;
+}
+
+header img {
+    border-radius: 100px;
+    object-fit: cover;
+    /* Mantém a proporção e cobre a área do contêiner */
+    max-width: 150px;
+    margin-top: 50px;
+    height: 180px;
+
+}
+
+nav ul {
+    list-style: none;
+    /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    /* Adiciona sublinhado quando o link é sobrevoado */
+}
+
+main {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    text-align: center;
+}
+
+section header {
+    margin-bottom: 13px; /* Espaçamento abaixo do cabeçalho */
+    background-image: url('/home/iza/Área de Trabalho/FrontCraft/html5+css/header.png');
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+section header h2 {
+    font-size: 2em;
+    color: #964b00;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+
+}
+
+section article p {
+    margin-left: 10px;
+    color: #8d4925;
+    text-align: justify;
+}
+
+#menu {
+    /* # é usado para selecionar um elemento HTML que tenha um atributo id correspondente ao valor fornecido.*/
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-block: solid #964b00;
+}
+
+#menu>header {
+    background-image: none;
+    padding: 22px;
+    border-radius: 70px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(135deg, #d4a373, #ffffff);
+}
+
+#menu-item {
+    display: flex;
+    gap: 1rem;
+    text-align: justify;
+}
+
+#menu-item article {
+    border: double #964b00;
+    border-radius: 10px;
+}
+
+#menu-item article header h3 {
+    text-align: center;
+}
+
+#menu-item article header p {
+    text-align: center;
+}
+
+#nosso-lugar {
+    padding: 0;
+ display: none;
+ flex-direction: none;
+ justify-content: none;
+ align-items: none;
+ border-block: none;
+}
+
+#images {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+#images figure {
+    width: 50%;
+    height: 30%;
+    overflow: hidden;
+    /* Garante que qualquer parte da imagem que ultrapassar a figura seja ocultada */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 5 / 3;
+    border-radius: 5px;
+}
+
+#images img {
+    width: 100%;
+    /* A imagem ocupa toda a largura da figura */
+    height: 100%;
+    /* A imagem ocupa toda a altura da figura */
+    object-fit: cover;
+}
+
+#sobre p {
+    margin-left: 10px;
+    text-align: justify;
+    color: #8d4925;
+}
+
+#equipe {
+    display: block;
+}
+
+#equipe header p{
+    text-align: center;
+}
+
+#contato p {
+    margin-left: 10px;
+}
+
+footer {
+    background: rgba(177, 114, 69, 0.5);
+    backdrop-filter: blur(0.8px);
+    padding-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+footer form fieldset legend {
+    margin-left: 10px;
+}
+
+footer form fieldset label {
+    margin-left: 10px;
+}
+
+footer form fieldset button {
+    margin-left: 13%;
+}
