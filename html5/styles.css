@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 2px 5px;
+    font-family: Arial, sans-serif; 
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+
+}
+
+.back-button img {
+    width: 60px;
+    height: auto;
+}
+
+.back-button:hover {
+    transform: scale(1.2); /* Aumenta o tamanho do botão */
+}

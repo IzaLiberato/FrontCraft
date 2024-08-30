@@ -276,3 +276,22 @@ footer form fieldset label {
 footer form fieldset button {
     margin-left: 13%;
 }
+
+/* Estilização do link no rodapé como botão */
+footer a {
+    display: inline-block;
+    background-color: #6F4F28;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer; /* Muda o cursor para uma mãozinha */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+footer a:hover {
+    background-color: #8B5A2B; /* Cor de fundo mais escura no hover */
+}
+

@@ -42,7 +42,6 @@
             <header>
                 <h2>Menu</h2>
             </header>
-            </sections>
             <section id="menu-item">
                 <article class="menu-item">
                     <header>
@@ -87,70 +86,70 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, maiores!</p>
                 </article>
             </section>
-            <section id="nosso-lugar">
-                <header>
-                    <h2>Nosso Lugar</h2>
-                </header>
-                </sections>
-            </section>
-            <section id="images">
-                <figure>
-                    <img src="/home/iza/Área de Trabalho/FrontCraft/html5+css/cft.jpg" alt="Descrição da Imagem 1">
-                </figure>
+        </section>
+        
+        <section id="nosso-lugar">
+            <header>
+                <h2>Nosso Lugar</h2>
+            </header>
+            <!-- Adicione conteúdo sobre "Nosso Lugar" aqui -->
+        </section>
 
-                <figure>
-                    <img src="/home/iza/Área de Trabalho/FrontCraft/html5+css/cftr.jpeg" alt="Descrição da Imagem 2">
-                </figure>
-            </section>
+        <section id="images">
+            <figure>
+                <img src="/home/iza/Área de Trabalho/FrontCraft/html5+css/cft.jpg" alt="Descrição da Imagem 1">
+            </figure>
 
-            <section id="sobre">
-                <header>
-                    <h2>Sobre Nós</h2>
-                </header>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe maiores eveniet ipsum, praesentium
-                    fuga minima odit quaerat quam quibusdam veniam dicta beatae facere nostrum possimus magnam commodi
-                    tenetur nobis consequuntur! Neque esse sunt ullam nulla, placeat quae est dolorem accusamus,
-                    voluptatum ex beatae consequuntur dignissimos corporis tempore? Sint, perspiciatis doloremque?</p>
-            </section>
+            <figure>
+                <img src="/home/iza/Área de Trabalho/FrontCraft/html5+css/cftr.jpeg" alt="Descrição da Imagem 2">
+            </figure>
+        </section>
 
-            <section id="equipe">
+        <section id="sobre">
+            <header>
+                <h2>Sobre Nós</h2>
+            </header>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe maiores eveniet ipsum, praesentium fuga minima odit quaerat quam quibusdam veniam dicta beatae facere nostrum possimus magnam commodi tenetur nobis consequuntur! Neque esse sunt ullam nulla, placeat quae est dolorem accusamus, voluptatum ex beatae consequuntur dignissimos corporis tempore? Sint, perspiciatis doloremque?</p>
+        </section>
+
+        <section id="equipe">
+            <header>
+                <h2>Nossa Equipe</h2>
+            </header>
+            <article>
                 <header>
-                    <h2>Nossa Equipe</h2>
+                    <h3>João Silva</h3>
+                    <p>Barista Chefe</p>
                 </header>
-                <article>
-                    <header>
-                        <h3>João Silva</h3>
-                        <p>Barista Chefe</p>
-                    </header>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta vero ut laudantium ad quasi
-                        laborum ipsam esse aspernatur hic? Totam perferendis vitae modi repudiandae consequuntur
-                        consectetur cum, incidunt unde.</p>
-                </article>
-                <article>
-                    <header>
-                        <h3>Maria Oliveira</h3>
-                        <p>Confeiteira</p>
-                    </header>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel quaerat culpa aliquam
-                        veritatis harum aliquid distinctio facere sunt praesentium nulla eligendi labore consequuntur,
-                        eius itaque pariatur dicta accusantium perferendis?</p>
-                </article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dicta vero ut laudantium ad quasi laborum ipsam esse aspernatur hic? Totam perferendis vitae modi repudiandae consequuntur consectetur cum, incidunt unde.</p>
+            </article>
+            <article>
+                <header>
+                    <h3>Maria Oliveira</h3>
+                    <p>Confeiteira</p>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel quaerat culpa aliquam veritatis harum aliquid distinctio facere sunt praesentium nulla eligendi labore consequuntur, eius itaque pariatur dicta accusantium perferendis?</p>
+            </article>
+        </section>
 
     </main>
 
     <!-- Rodapé -->
     <footer id="contato">
         <p>&copy; 2024 Cafeteria Grãos e Sabores. Todos os direitos reservados.</p>
-
+        <nav>
+            <ul>
+                <li><a href="/home/iza/Área de Trabalho/FrontCraft/html5/initial.html">Laboratório</a></li>
+            </ul>
+        </nav>
         <!-- Formulário de Contato -->
-        <form action="#" method="post"> <!-- agrupando visualmente os elementos-->
+        <form action="#" method="post">
             <fieldset>
                 <legend>Fale Conosco</legend>
 
                 <label for="nome">Nome:</label>
-                <!-- o for precisa apontar para o id do input que ele representa para linkar a label ao seu input -->
                 <input type="text" id="nome" name="nome" required>
-                <br> <!-- quebra de linha -->
+                <br>
 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
@@ -160,7 +159,7 @@
                 <textarea id="mensagem" name="mensagem" rows="3" required></textarea>
                 <br>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="button">Enviar</button>
             </fieldset>
         </form>
     </footer>
